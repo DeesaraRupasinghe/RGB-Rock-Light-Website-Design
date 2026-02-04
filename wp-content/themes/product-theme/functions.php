@@ -399,7 +399,7 @@ function product_theme_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'footer_copyright',
         array(
-            'default'           => '&copy; ' . date( 'Y' ) . ' RGB Rock Lights. All rights reserved.',
+            'default'           => '&copy; ' . gmdate( 'Y' ) . ' RGB Rock Lights. All rights reserved.',
             'sanitize_callback' => 'wp_kses_post',
             'transport'         => 'refresh',
         )

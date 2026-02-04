@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="site-footer__copyright">
             <p>
                 <?php
-                $footer_copyright = get_theme_mod( 'footer_copyright', '&copy; ' . date( 'Y' ) . ' RGB Rock Lights. All rights reserved.' );
+                $footer_copyright = get_theme_mod( 'footer_copyright', '&copy; ' . gmdate( 'Y' ) . ' RGB Rock Lights. All rights reserved.' );
                 echo wp_kses_post( $footer_copyright );
                 ?>
             </p>

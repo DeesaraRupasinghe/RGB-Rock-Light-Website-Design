@@ -42,7 +42,7 @@ get_header();
                         </div>
 
                         <footer class="post-card__footer">
-                            <span class="post-card__date"><?php echo get_the_date(); ?></span>
+                            <span class="post-card__date"><?php echo esc_html( get_the_date() ); ?></span>
                             <a href="<?php the_permalink(); ?>" class="post-card__read-more">
                                 <?php esc_html_e( 'Read More', 'product-theme' ); ?>
                             </a>
